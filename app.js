@@ -50,6 +50,6 @@ function createBlogPost(title, content, date) {
 // Inject blog posts into the #blog-posts container
 const blogContainer = document.getElementById('blog-posts');
 blogPosts.forEach(post => {
-    const blogPost = createBlogPost(post.title, post.content);
+    const blogPost = createBlogPost(post.title, post.date, post.content);
     blogContainer.appendChild(blogPost);
 });

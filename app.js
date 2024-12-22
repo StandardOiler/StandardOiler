@@ -38,7 +38,7 @@ function createBlogPost(title, date, content) {
     postDate.textContent = formatDate(date);  // Format the date
 
     const postContent = document.createElement('div');
-    postContent.innerHTML = formatContent(content);
+    postContent.innerHTML = formatContent(content); // Format the content
     
     postElement.appendChild(postTitle);
     postElement.appendChild(postDate);

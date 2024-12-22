@@ -49,6 +49,9 @@ function createBlogPost(title, date, content) {
 
 // Inject blog posts into the #blog-posts container
 const blogContainer = document.getElementById('blog-posts');
+
+blogPosts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Newest first
+
 blogPosts.forEach(post => {
     const blogPost = createBlogPost(post.title, post.date, post.content);
     blogContainer.appendChild(blogPost);

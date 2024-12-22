@@ -33,12 +33,12 @@ function createBlogPost(title, date, content) {
     const postTitle = document.createElement('h2');
     postTitle.textContent = title;
 
-    const postContent = document.createElement('p');
-    postContent.textContent = content;
-
     const postDate = document.createElement('p');
     postDate.classList.add('post-date');
     postDate.textContent = formatDate(date);  // Format the date
+
+    const postContent = document.createElement('p');
+    postContent.textContent = content;
     
     postElement.appendChild(postTitle);
     postElement.appendChild(postDate);
